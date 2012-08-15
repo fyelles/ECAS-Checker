@@ -1,1 +1,6 @@
 bin/
+bin/classes.dex
+
+*.class
+
+*.class
