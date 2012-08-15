@@ -10,14 +10,21 @@
 		</title>
 		<script type="text/javascript" src="jq.js"></script>
 <script type="text/javascript">
-function myFunction()
-{
-alert("Hello! I am an alert box!");
-}
+
+
+
+$(document).ready(function(){
+
+
+
 
  $("form").submit(function() {
-   alert('Handler for .submit() called.');
-  return false;
+	 activity.SaveJson($(this).serialize());
+   alert("Test");
+   
+  return true;
+});
+
 });
 
 </script>
@@ -1456,12 +1463,10 @@ alert("Hello! I am an alert box!");
 						</div>
 					</div>
 						<div class="submit">
-							<input type="submit" name="_submit" value="Continue" onclick="Hello()" />
+							<input type="submit" name="_submit" value="Continue" />
 						</div>
 					</div>
 			</form>
-			<input type="button" onclick="myFunction()" value="Show alert box" />
-			
 		</div>
 	</body>
 </html>
