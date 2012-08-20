@@ -8,7 +8,7 @@
 		<title>
 			Client Application Status
 		</title>
-		<script type="text/javascript" src="jq.js"></script>
+	<script type="text/javascript" src="jq.js"></script>
 <script type="text/javascript">
 
 
@@ -19,21 +19,40 @@ $(document).ready(function(){
 
 
  $("form").submit(function() {
-	 activity.SaveJson($(this).serialize());
-   alert("Test");
-   
+	 activity.SaveJson($(this).serialize());   
   return true;
 });
 
 });
 
 </script>
+<style type="text/css">
+body {
+  color: black;
+  background-color: #EFF5FB;
+  border-top        : 1px solid #000099;
+  border-bottom     : 1px solid #000099;
+  border-left       : 1px solid #000099;
+  border-right      : 1px solid #000099;
+  padding           : 5px;
+
+ }
+hr {
+	background-color: #000099;
+	height: 2px;	
+}	
+.s150 {
+	width: 200px;
+}
+	
+</style>
 	</head>
 	<body>
 		<div class="main">
 			<h1>
 				Client Application Status
 			</h1>
+			<hr />
 			<form action="https://services3.cic.gc.ca/ecas/authenticate.do" method="post">
 			Remember information <input type="checkbox" name="remember" id=remember value=1 /> 
 			
@@ -50,7 +69,7 @@ $(document).ready(function(){
 							<label for="idTypeLabel">Identification Type:</label>
 						</div>
 						<div class="col65AreaCAS">
-							<select id="idTypeLabel" name="identifierType">
+							<select id="idTypeLabel" name="identifierType" class="s150">
 								<option value="-1">
 									Identification Type
 								</option>
@@ -85,7 +104,7 @@ $(document).ready(function(){
 								<label for="idNumberLabel">Identification Number:</label>
 							</div>
 							<div class="col65AreaCAS">
-								<input id="idNumberLabel" type="password" name="identifier" value="" maxlength="12" />
+								<input id="idNumberLabel" type="password" name="identifier" value="" maxlength="12" class="s150"/>
 							</div>
 						</div>
 					</div>
@@ -95,7 +114,7 @@ $(document).ready(function(){
 								<label for="surnameLabel">Surname/Family Name:</label>
 							</div>
 							<div class="col65Area">
-								<input id="surnameLabel" type="text" name="surname" value="" maxlength="50" />
+								<input id="surnameLabel" type="text" name="surname" value="" maxlength="50" class="s150"/>
 							</div>
 						</div>
 						<div class="divRowArea">
@@ -668,7 +687,7 @@ $(document).ready(function(){
 								<label for="cobLabel">Place of Birth:</label>
 							</div>
 							<div class="col65Area">
-								<select id="cobLabel" name="countryOfBirth">
+								<select id="cobLabel" name="countryOfBirth" class="s150">
 									<option value="-1">
 										Please select
 									</option>
@@ -1468,5 +1487,6 @@ $(document).ready(function(){
 					</div>
 			</form>
 		</div>
+		* use the menu key of your android device for help
 	</body>
 </html>

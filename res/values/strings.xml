@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ECAS Checker</string>
-
+    <string name="support">franck@oscdtechnologies.com</string>
+    <string name="body">Please provide more details:\n</string>
+    <string name="help">Question about ECAS Checker</string>
+    
 </resources>
