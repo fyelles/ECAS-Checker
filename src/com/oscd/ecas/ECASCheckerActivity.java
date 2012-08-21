@@ -177,7 +177,9 @@ public class ECASCheckerActivity extends Activity {
 								+ prefs.getString("dobMonth", null)
 								+ "']\").prop('selected',true);");
 						// place of birth
-						view.loadUrl("javascript:$(\"#cobLabel option[value='131']\").prop('selected',true);");
+						view.loadUrl("javascript:$(\"#cobLabel option[value='" 
+								+ prefs.getString("countryOfBirth", null)								
+								+"']\").prop('selected',true);");
 
 
 
